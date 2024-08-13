@@ -1,8 +1,8 @@
 # Curso de PHP Moderno
 
-Curso de desenvolvimento em PHP por Gustavo Guanabara.
+`This repository is available only in Portuguese.`
 
-`This repository only exist in Portuguese`
+Curso de desenvolvimento em PHP por Gustavo Guanabara.
 
 ## Conteúdo
 
