@@ -11,7 +11,7 @@
   <h1>As tags de PHP</h1>
 
   <!-- Super Tag PHP -->
-  <?php 
+  <?php
     $name = "Irineu nusabi";
     echo "<p>Meu nome é $name</p>";
   ?>
