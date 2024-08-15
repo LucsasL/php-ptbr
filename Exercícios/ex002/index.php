@@ -20,7 +20,7 @@
   <? ?>
 
   <!-- ASP Tag -->
-  <!-- <%  %> -->
+  <!-- <% echo "A tag ASP deixou de funcionar no PHP 8" %> -->
 
   <!-- Short Tag PHP -->
   <?php echo "CursoemVídeo" ?>
