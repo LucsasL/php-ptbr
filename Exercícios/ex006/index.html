@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obtendo dados de formulários com PHP</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      Apresente-se para nós
+    </h1>
+  </header>
+
+  <section class="formDiv">
+    <form action="cad.php" method="GET" autocomplete="on">
+      <fieldset>
+        <legend>Informações pessoais</legend>
+
+        <div class="divFormInp">
+          <label for="nome">Nome: </label> <br />
+          <input type="text" name="nome" id="nomeInp" required>
+        </div>
+
+        <div class="divFormInp">
+          <label for="sNome">Sobrenome</label> <br />
+          <input type="text" name="sNome" id="sNomeInp" required>
+        </div>
+
+        <div class="divFormInp">
+          <input type="submit" value="Enviar">
+        </div>
+      </fieldset>
+    </form>
+  </section>
+</body>
+
+</html>
