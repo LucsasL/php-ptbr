@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analisador de Número Real</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ui">
+    <main>
+      <h1>
+        Analisador de Número Real
+      </h1>
+      
+      <form action="analiseNum.php" method="get" autocomplete="on">
+        <fieldset>
+          <legend>
+            Número a ser analisado
+          </legend>
+
+          <div>
+            <label for="numReal">Número Real:</label> <br />
+            <input type="text" name="numReal" id="numRealId" required>
+          </div>
+
+          <div>
+            <input type="submit" value="Analisar">
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
