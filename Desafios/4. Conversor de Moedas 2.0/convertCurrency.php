@@ -15,6 +15,7 @@
         Conversor de moedas v2.0
       </h1>
 
+      <!-- Usar API para fazer captura da cotação do dólar -->
       <?php 
         $dinReal = $_GET["dinheiro"];
         // $dinDolar = $;
