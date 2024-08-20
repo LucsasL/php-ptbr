@@ -2,11 +2,10 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gerador de números</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -31,12 +30,12 @@
         
         // Usando random_int($min, $max); Gera números aleatórios criptograficamente seguros
         // Porém, é a função mais lentas comparando com as outras 3
-        $randNum = mt_rand($min, $max);
+        $randNum = random_int($min, $max);
         echo "<p>O valor gerado foi <strong>$randNum</strong></p>";
       ?>
 
       <button class="linkButt">
-        <a href="." target="_self">🔁 Gerar outro número</a>
+        <a href="." target="_self">&#x1F504; Gerar outro número</a>
       </button>
     </section>
   </div>
