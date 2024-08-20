@@ -20,12 +20,12 @@
 
     <?php 
       $antecessor = $num - 1;
-      echo "<p>O antecessor de <strong>$num</strong> é <strong>$antecessor</strong></p>";
+      echo "<p>O seu antecessor é <strong>$antecessor</strong></p>";
     ?>
 
     <?php 
       $sucessor = $num + 1;
-      echo "<p>O sucessor de <strong>$num</strong> é <strong>$sucessor</strong></p>";
+      echo "<p>O seu sucessor é <strong>$sucessor</strong></p>";
     ?>
 
     <button class="linkButt">
