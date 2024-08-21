@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Globais em PHP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="formDiv">
+        <form action="superglobais.php?tipo=Aluno&turno=Noite" method="post" autocomplete="on">
+          <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <div>
+              <label for="nome">Nome: </label> <br />
+              <input
+                type="text"
+                name="nome"
+                id="nameInp"
+                required
+                placeholder="Seu nome..."
+              />
+            </div>
+            <div>
+              <label for="sNome">Sobrenome: </label> <br />
+              <input
+                type="text"
+                name="sNome"
+                id="sNameInp"
+                required
+                placeholder="Seu sobrenome..."
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Informações Cadastrais</legend>
+
+            <div>
+              <label for="user">Usuário: </label> <br />
+              <input
+                type="text"
+                placeholder="Seu nome de usuário..."
+                name="user"
+                id="userInp"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="senha">Senha: </label> <br />
+              <input
+                type="password"
+                placeholder="Sua senha..."
+                name="senha"
+                id="senhaInp"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <div>
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
