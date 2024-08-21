@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Analisador de Número Real</title>
   <link rel="stylesheet" href="style.css">
@@ -13,7 +14,7 @@
         Analisador de Número Real
       </h1>
       
-      <form action="analiseNum.php" method="get" autocomplete="on">
+      <form action="analiseNum.php" method="post" autocomplete="on">
         <fieldset>
           <legend>
             Número a ser analisado
@@ -21,7 +22,7 @@
 
           <div>
             <label for="numReal">Número Real:</label> <br />
-            <input type="text" name="numReal" id="numRealId" required>
+            <input type="number" name="numReal" id="numRealId" required step="0.001">
           </div>
 
           <div>
