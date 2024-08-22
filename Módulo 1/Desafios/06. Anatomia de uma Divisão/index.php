@@ -14,8 +14,8 @@
     <h1>Anatomia de uma Divisão</h1>
 
     <?php 
-      $dividendo = $_REQUEST["dividendo"];
-      $divisor = $_REQUEST["divisor"];
+      $dividendo = $_REQUEST["dividendo"] ?? 0;
+      $divisor = $_REQUEST["divisor"] ?? 1;
       $quociente = (int) ($dividendo / $divisor);
       $resto = $dividendo % $divisor;
     ?>
@@ -28,13 +28,14 @@
 
         <div>
           <label for="dividendo">Dividendo: </label> <br />
-          <input type="number" name="dividendo" id="dividendoInp" placeholder="Dividendo..." value="<?= $dividendo ?>"
-            required />
+          <input type="number" name="dividendo" id="dividendoInp" placeholder="Dividendo..." min="0"
+            value="<?= $dividendo ?>" required />
         </div>
 
         <div>
-          <label for="divisor">Divisor: </label> <br />
-          <input type="text" name="divisor" id="divisorInp" placeholder="Divisor..." value="<?= $divisor ?>" required />
+          <label for=" divisor">Divisor: </label> <br />
+          <input type="number" name="divisor" id="divisorInp" placeholder="Divisor..." min="1" value="<?= $divisor ?>"
+            required />
         </div>
 
         <div>
