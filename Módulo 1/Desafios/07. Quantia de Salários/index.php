@@ -12,15 +12,15 @@
 <body>
   <?php 
     // Informações básicas
-    $sal = $_REQUEST["sal"] ?? 1412;
     $salMin = 1412;
+    $sal = $_REQUEST["sal"] ?? $salMin;
     
     // Padrão de formatação de moeda
     $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
     
     // Operações
     $quantSal = (int) ($sal / $salMin);
-    $restoCalc = 1412 * ($sal / $salMin - $quantSal);
+    $restoCalc = $sal % $salMin;
   ?>
   <main>
     <h1>
@@ -32,7 +32,8 @@
         <fieldset>
           <div>
             <label for="sal">Salário (R$): </label> <br />
-            <input type="number" name="sal" id="salInp" value="<?= $sal ?>" placeholder="Seu salário..." required />
+            <input type="number" name="sal" id="salInp" value="<?= $sal ?>" placeholder="Seu salário..." step="0.01"
+              required />
           </div>
 
           <?php 
