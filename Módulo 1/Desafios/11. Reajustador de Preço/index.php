@@ -35,15 +35,16 @@
 
           <div>
             <label for="">Preço do Produto (R$)</label> <br />
-            <input type="number" name="precoProd" id="precoProdID" value="<?= $precoProd ?>"
+            <input type="number" name="precoProd" id="precoProdID" value="<?= $precoProd ?>" min="0.1" step="0.01"
               placeholder="Preço do Produto" required />
           </div>
 
           <div>
-            <label for="percReaj">Qual será o percentual de reajuste? <strong>(<?= $percReaj ?>%)</strong></label>
+            <label for="percReaj">Qual será o percentual de reajuste? <strong>(<span id="p">0</span>%
+                )</strong></label>
             <br />
             <input type="range" name="percReaj" id="percReajID" value="<?= $percReaj ?>" min="0" max="100" step="1"
-              required />
+              oninput="mudaValor()" required />
           </div>
         </fieldset>
 
@@ -63,6 +64,14 @@
       echo "<p>O produto que custava " . numfmt_format_currency($padrao, $precoProd, "BRL") . ", com <strong>" . $percReaj . "% de aumento</strong> vai passar a custar <strong>" . numfmt_format_currency($padrao, $valProd, "BRL") . "</strong> a partir de agora.</p>";
     ?>
   </section>
+
+  <script>
+  mudaValor();
+
+  function mudaValor() {
+    p.innerText = percReajID.value;
+  }
+  </script>
 </body>
 
 </html>
