@@ -29,12 +29,12 @@
 
         <div>
           <label for="anoNasc">Em que ano você nasceu?</label> <br />
-          <input type="number" name="anoNasc" id="anoNascID" value="<?= $anoNasc ?>" placeholder="Ano de Nascimento..."
-            required />
+          <input type="number" name="anoNasc" id="anoNascID" value="<?= $anoNasc ?>" min="1900"
+            max="<?= $anoAtual - 1 ?>" placeholder="Ano de Nascimento..." required />
         </div>
 
         <div>
-          <label for="anoPref">Quer saber sua idade em que ano? (Atualmentes estamos em
+          <label for="anoPref">Quer saber sua idade em que ano? (Atualmente estamos em
             <?= $anoAtual ?>)
           </label> <br />
           <input type="number" name="anoPref" id="anoPrefID" value="<?= $anoPref ?>"
