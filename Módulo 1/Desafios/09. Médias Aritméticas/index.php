@@ -41,7 +41,7 @@
 
           <div>
             <label for="pes1">Peso 1:</label>
-            <input type="number" name="pes1" id="pes1ID" value="<?= $pes1 ?>" placeholder="Peso 1" required />
+            <input type="number" name="pes1" id="pes1ID" value="<?= $pes1 ?>" min="1" placeholder="Peso 1" required />
           </div>
         </fieldset>
 
@@ -57,7 +57,8 @@
 
           <div>
             <label for="pes2">Peso 2:</label> <br />
-            <input type="number" name="pes2" id="pes2ID" value="<?= $pes2 ?>" placeholder="Peso 2..." required />
+            <input type="number" name="pes2" id="pes2ID" value="<?= $pes2 ?>" min="1" placeholder="Peso 2..."
+              required />
           </div>
         </fieldset>
 
