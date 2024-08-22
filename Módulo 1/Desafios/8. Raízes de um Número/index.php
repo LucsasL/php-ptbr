@@ -16,13 +16,13 @@
     </h1>
 
     <?php 
-      $num = $_REQUEST["num"];
+      $num = $_REQUEST["num"] ?? 0;
       $raizQ = sqrt($num);
       $raizC = $num ** (1/3);
     ?>
 
     <div class="formDiv">
-      <form action="<?= $_SERVER["PHP_SELF"] . "?num=0" ?>" method="get" autocomplete="on">
+      <form action="<?= $_SERVER["PHP_SELF"] ?>" method="get" autocomplete="on">
         <fieldset>
           <div>
             <label for="num">Número: </label> <br />
