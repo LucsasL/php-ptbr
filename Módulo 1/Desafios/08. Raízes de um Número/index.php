@@ -26,7 +26,7 @@
         <fieldset>
           <div>
             <label for="num">Número: </label> <br />
-            <input type="number" name="num" id="numId" value="<?= $num ?>" required />
+            <input type="number" name="num" id="numId" value="<?= $num ?>" min="0" required />
           </div>
 
           <div>
@@ -46,8 +46,8 @@
 
     <ul>
       <?php 
-        echo "<li>A sua raiz quadrada é <strong>$raizQ</strong></li>";
-        echo "<li>A sua raiz cúbica é <strong>$raizC</strong></li>";
+        echo "<li>A sua raiz quadrada é <strong>" . number_format($raizQ, 3, ",", ".") . "</strong></li>";
+        echo "<li>A sua raiz cúbica é <strong>" . number_format($raizC, 3, ",", ".") . "</strong></li>";
       ?>
     </ul>
   </section>
