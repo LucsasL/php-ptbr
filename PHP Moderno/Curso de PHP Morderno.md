@@ -8,6 +8,8 @@ Explorando e trabalhando com uma das principais linguagens utilizadas no desenvo
 
 Nesse curso, os seguintes tópicos serão discutidos.
 
+- História e evolução do PHP;
+- Variáveis e Constantes;
 - Super Globais;
 - Formulários Retroalimentados;
-- 
+- Mais em breve...
