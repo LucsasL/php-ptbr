@@ -26,7 +26,7 @@
 
     // Função ceil($num): Arredonda o número para um inteiro crescente
     // Função floor($num): Arredonda o número para a base inteira
-    // Função floor($num): Arredonda o número aritméticamente
+    // Função round($num): Arredonda o número aritméticamente
 
     // Função hypot($cat1, $cat2): Calcula a hipotenusa de um triangulo retângulo
 
