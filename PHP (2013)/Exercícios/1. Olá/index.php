@@ -10,7 +10,7 @@
   <style>
   h2 {
     color: red;
-    text-shadow: 1px 1px 0px black;
+    text-shadow: 1px 1px 1px black;
   }
   </style>
 </head>
