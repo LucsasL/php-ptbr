@@ -10,60 +10,57 @@
 </head>
 
 <body>
-  <h1>
-    Operadores Aritméticos
-  </h1>
-
-  <?php 
-    $n1 = $_REQUEST["num1"] ?? 0;
-    $n2 = $_REQUEST["num2"] ?? 1;
-  ?>
 
   <div class="formulario">
+    <h1>
+      Operadores Aritméticos
+    </h1>
+
+    <?php 
+      $n1 = $_REQUEST["num1"] ?? 0;
+      $n2 = $_REQUEST["num2"] ?? 1;
+    ?>
+
     <form action="<?= $_SERVER["PHP_SELF"] ?>" method="get" autocomplete="on">
-      <div>
-        <label for="num1">Número 1:</label> <br>
-        <input type="number" name="num1" value="<?= $n1 ?>" id="num1ID" placeholder="Dividendo..." required />
-      </div>
+      <label for="num1">Número 1:</label> <br>
+      <input type="number" name="num1" value="<?= $n1 ?>" id="num1ID" placeholder="Dividendo..." required /> <br>
 
-      <div>
-        <label for="num2">Número 2:</label> <br>
-        <input type="number" name="num2" value="<?= $n2 ?>" id="num2ID" placeholder="Divisor..." min="1" required />
-      </div>
+      <label for="num2">Número 2:</label> <br>
+      <input type="number" name="num2" value="<?= $n2 ?>" id="num2ID" placeholder="Divisor..." min="1" required />
+      <br>
 
-      <div>
-        <input type="submit" value="Enviar" />
-      </div>
+      <input type="submit" value="Enviar" />
     </form>
+
+    <?php
+      // Soma +
+      $soma = $n1 + $n2;
+      echo "<p>A soma de $n1 e $n2 é igual a " . number_format($soma) . ".</p>";
+      
+      // Subtração -
+      $subtracao = $n1 - $n2;
+      echo "<p>A subtração de $n1 e $n2 é igual a " . number_format($subtracao) . ".</p>";
+      
+      // Multiplação *
+      $multi = $n1 * $n2;
+      echo "<p>A multiplicação de $n1 e $n2 é igual a " . number_format($subtracao) . ".</p>";
+      
+      // Divisão /
+      $divisao = $n1 / $n2;
+      echo "<p>A divisão de $n1 e $n2 é igual a " . number_format($divisao, 2, ",", ".") . ".</p>";
+      
+      // Módulo %
+      $modulo = $n1 % $n2;
+      echo "<p>O módulo de $n1 e $n2 é igual a " . number_format($modulo) . ".</p>";
+      
+      // Média Aritmética
+      
+      // Por conta da ordem de precedência, é necessário utilizar parenteses para obter a equação correta
+      $media = ($n1 + $n2) / 2; 
+      echo "<p>A média aritmética é igual a " . number_format($media, 2, ",", ".") . ".</p>";
+    ?>
   </div>
 
-  <?php
-    // Soma +
-    $soma = $n1 + $n2;
-    echo "<p>A soma de $n1 e $n2 é igual a " . number_format($soma) . ".</p>";
-    
-    // Subtração -
-    $subtracao = $n1 - $n2;
-    echo "<p>A subtração de $n1 e $n2 é igual a " . number_format($subtracao) . ".</p>";
-    
-    // Multiplação *
-    $multi = $n1 * $n2;
-    echo "<p>A multiplicação de $n1 e $n2 é igual a " . number_format($subtracao) . ".</p>";
-    
-    // Divisão /
-    $divisao = $n1 / $n2;
-    echo "<p>A divisão de $n1 e $n2 é igual a " . number_format($divisao, 2, ",", ".") . ".</p>";
-    
-    // Módulo %
-    $modulo = $n1 % $n2;
-    echo "<p>O módulo de $n1 e $n2 é igual a " . number_format($modulo) . ".</p>";
-    
-    // Média Aritmética
-    
-    // Por conta da ordem de precedência, é necessário utilizar parenteses para obter a equação correta
-    $media = ($n1 + $n2) / 2; 
-    echo "<p>A média aritmética é igual a " . number_format($media, 2, ",", ".") . ".</p>";
-  ?>
 </body>
 
 </html>
