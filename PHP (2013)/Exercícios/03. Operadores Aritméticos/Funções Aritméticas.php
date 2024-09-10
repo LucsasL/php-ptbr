@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Funções Aritméticos em PHP</title>
+  <link rel="stylesheet" href="_css/estilo.css" />
 </head>
 
 <body>
