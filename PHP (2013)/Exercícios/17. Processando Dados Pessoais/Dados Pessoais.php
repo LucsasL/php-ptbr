@@ -17,6 +17,7 @@
     </h2>
 
     <?php 
+      // Forma antiga: isset($_GET["nome"] ? $_GET["nome"] : "[Não informado]")
       $nome = $_REQUEST["nome"] ?? "Desconhecido";
       $anoNasc = $_REQUEST["anoNasc"] ?? 0;
       $sexo = $_REQUEST["sexo"] ?? "Não Especificado";
@@ -33,12 +34,17 @@
         required />
       <br />
 
-      <label for="sexo">Sexo: </label> <br />
-      <input type="radio" name="sexo" id="masc" value="Masculino" checked />
-      <label for="masc">Masculino</label> <br />
+      <fieldset>
+        <legend>Sexo: </legend>
 
-      <input type="radio" name="sexo" id="fem" value="Feminino" />
-      <label for="fem">Feminino</label> <br />
+        <label for="sexo">Sexo: </label> <br />
+
+        <input type="radio" name="sexo" id="masc" value="Masculino" checked />
+        <label for="masc">Masculino</label> <br />
+
+        <input type="radio" name="sexo" id="fem" value="Feminino" />
+        <label for="fem">Feminino</label> <br />
+      </fieldset>
 
       <input type="submit" value="Mostrar dados" />
     </form>
