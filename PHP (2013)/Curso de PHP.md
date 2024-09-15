@@ -11,6 +11,8 @@ Nesse curso, os seguintes tópicos serão discutidos.
 
 - História e evolução do PHP;
 - Variáveis e Constantes;
-- Super Globais;
-- Formulários Retroalimentados;
+- Itegração com HTML;
+- Condicionais Básicas;
+- Condicionais Aninhadas;
+- Loops (While, Do While, For);
 - Mais em breve...
