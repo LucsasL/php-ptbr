@@ -15,4 +15,6 @@ Nesse curso, os seguintes tópicos serão discutidos.
 - Condicionais Básicas;
 - Condicionais Aninhadas;
 - Loops (While, Do While, For);
+- Funções em PHP;
+- Vetores e Matrizes;
 - Mais em breve...
