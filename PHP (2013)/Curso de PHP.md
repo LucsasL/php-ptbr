@@ -18,3 +18,5 @@ Nesse curso, os seguintes tópicos serão discutidos.
 - Funções em PHP;
 - Vetores e Matrizes;
 - Mais em breve...
+
+**Work in Progress**
