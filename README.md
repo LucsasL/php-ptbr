@@ -17,12 +17,22 @@ Curso de desenvolvimento em PHP por Gustavo Guanabara.
 
 # Curso de PHP (2013)
 
+![Curso Moderno de PHP]()
+
 **Trabalho em Progresso**
 
 ## Conteúdo
+
+- 
 
 # Curso de PHP Orientado a Objeto
 
+Curso focado no paradigma de programação orientada a objetos (OOP) em PHP.
+
+![Curso Moderno de PHP]()
+
 **Trabalho em Progresso**
 
 ## Conteúdo
+
+- 
